@@ -7,7 +7,7 @@ import numpy as np
 import plotly.graph_objs as go
 
 # Load the main_data.csv file using pandas
-df = pd.read_csv('main_data.csv', parse_dates=['order_purchase_timestamp', 'order_approved_at', 'order_delivered_carrier_date', 'order_delivered_customer_date', 'order_estimated_delivery_date'])
+df = pd.read_csv('https://raw.githubusercontent.com/FransiscoReadyPermana/E-commerce-public-dicoding/main/Dashboard/main_data.csv?token=GHSAT0AAAAAACGFXXOZOANY7NHHAZQZTUBEZJBIS4A', parse_dates=['order_purchase_timestamp', 'order_approved_at', 'order_delivered_carrier_date', 'order_delivered_customer_date', 'order_estimated_delivery_date'])
 min_date = df["order_purchase_timestamp"].min()
 max_date = df["order_purchase_timestamp"].max()
 
